@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(22, 22, 22);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#gameBoard {
+    display: grid;
+    border: 8px solid white;
+    border-radius: 10px;
+    width: 90vw;
+    height: 76vh;
+    grid-template-columns: auto auto auto;
+}
+
+#scoreP1, #scoreP2 {
+    border: 3px solid white;
+    height: 100px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+}
+
+#gameStatus {
+    border: 3px solid white;
+    height: 100px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+}
+
+#gameArea {
+    border: 3px solid white;
+    grid-column: span 3;
+    height: 450px;
+    position: relative;
+    background-color: rgb(22, 22, 22);
+}
+
+#paddleP1, #paddleP2 {
+    position: absolute;
+    width: 10px;
+    height: 90px;
+    transform: translateX(-50%);
+}
+
+#paddleP1{
+    background-color: rgb(159, 0, 195);
+    left: 90%;
+}
+
+#paddleP2 {
+    background-color: rgb(207, 0, 0);
+    left: 10%;
+}
+
+#ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgb(2, 207, 207);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
